@@ -6,9 +6,8 @@ import os.path
 from datetime import date, timedelta
 
 
-def data():
+def data(today):
 
-    today = date.today()
     hist = today - timedelta(days=7)
     head = ["Date","CO","NO","NO2", "O3","PM1.0","PM2.5","PM10"]
     units = ["ppb","ppb","ppb","ppb","ug/m3","ug/m3","ug/m3"]
