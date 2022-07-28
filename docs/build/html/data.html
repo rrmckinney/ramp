@@ -505,7 +505,7 @@ div.rendered_html tbody tr:hover {
 </style>
 <p>To see realtime air quality data from the WRFT rooftop weather station, please click on the cell below and hit ctrl-enter.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[343]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">wget</span>
@@ -514,7 +514,6 @@ div.rendered_html tbody tr:hover {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">os.path</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span><span class="p">,</span> <span class="n">timedelta</span>
-
 <span class="kn">from</span> <span class="nn">func</span> <span class="kn">import</span> <span class="n">data</span>
 
 <span class="n">data</span><span class="p">()</span>
@@ -527,14 +526,19 @@ div.rendered_html tbody tr:hover {
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ImportError</span>                               Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/rmckinney/ramp/docs/source/data.ipynb Cell 2&#39;</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=4&#39;&gt;5&lt;/a&gt;</span> import os.path
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/rmckinney/ramp/docs/source/data.ipynb Cell 2&#39;</span> in <span class="ansi-cyan-fg">&lt;cell line: 9&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=5&#39;&gt;6&lt;/a&gt;</span> from datetime import date, timedelta
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=7&#39;&gt;8&lt;/a&gt;</span> from func import data
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=9&#39;&gt;10&lt;/a&gt;</span> data()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=6&#39;&gt;7&lt;/a&gt;</span> from func import data
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/rmckinney/ramp/docs/source/data.ipynb#ch0000001?line=8&#39;&gt;9&lt;/a&gt;</span> data()
 
-<span class="ansi-red-fg">ImportError</span>: cannot import name &#39;data&#39; from &#39;func&#39; (/Users/rmckinney/ramp/docs/source/func.py)
+File <span class="ansi-green-fg">~/ramp/docs/source/func.py:4</span>, in <span class="ansi-cyan-fg">data</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;file:///Users/rmckinney/ramp/docs/source/func.py?line=1&#39;&gt;2&lt;/a&gt;</span> def data():
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;file:///Users/rmckinney/ramp/docs/source/func.py?line=3&#39;&gt;4&lt;/a&gt;</span>     today = date.today()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;file:///Users/rmckinney/ramp/docs/source/func.py?line=4&#39;&gt;5&lt;/a&gt;</span>     hist = today - timedelta(days=7)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;file:///Users/rmckinney/ramp/docs/source/func.py?line=5&#39;&gt;6&lt;/a&gt;</span>     head = [&#34;Date&#34;,&#34;CO&#34;,&#34;NO&#34;,&#34;NO2&#34;, &#34;O3&#34;,&#34;PM1.0&#34;,&#34;PM2.5&#34;,&#34;PM10&#34;]
+
+<span class="ansi-red-fg">NameError</span>: name &#39;date&#39; is not defined
 </pre></div></div>
 </div>
 

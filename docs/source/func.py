@@ -1,5 +1,13 @@
+import wget
+import pandas as pd
+import matplotlib.pyplot as plt 
+import numpy as np
+import os.path
+from datetime import date, timedelta
+
+
 def data():
-    
+
     today = date.today()
     hist = today - timedelta(days=7)
     head = ["Date","CO","NO","NO2", "O3","PM1.0","PM2.5","PM10"]
