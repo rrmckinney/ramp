@@ -4,14 +4,14 @@
    contain the root `toctree` directive.
 
 Welcome to the WFRT Air Quality data display!
-================================
+==============================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
-   intro.mod
-   Data Stream <dat.ipynb>
+   intro.md
+   Data Stream <data.ipynb>
 
 
 Indices and tables
