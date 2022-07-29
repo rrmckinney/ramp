@@ -1,6 +1,6 @@
-#!/bin/bash
-source ~/miniconda3/bin
-source  /Users/rmckinney/opt/miniconda3/envs/wfrt
+#!/bin/sh
+source ~/miniconda3/bin//activate
+conda activate wfrt
 
 make clean
 
