@@ -8,7 +8,7 @@ make clean SPHINXBUILD='/Users/rmckinney/opt/miniconda3/envs/wfrt/python' '/User
 
 make html SPHINXBUILD='/Users/rmckinney/opt/miniconda3/envs/wfrt/python' '/Users/rmckinney/opt/miniconda3/envs/wfrt/sphinx-build'
 
-cd $PWD
+
 git add .
 
 git commit -m "add ramp data"
