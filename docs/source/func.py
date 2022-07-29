@@ -1,13 +1,17 @@
-import wget
-import pandas as pd
-import matplotlib.pyplot as plt 
-import numpy as np
-import os.path
-from datetime import date, timedelta
+def run():
+    link = "http://18.222.146.48/RAMP/v1/raw/1047/data/"
+    station = "1047"
 
 
-def data(today):
+    import wget
+    import pandas as pd
+    import matplotlib.pyplot as plt 
+    import numpy as np
+    import os.path
+    import sys
+    from datetime import date, timedelta
 
+    today = date.today()
     hist = today - timedelta(days=7)
     head = ["Date","CO","NO","NO2", "O3","PM1.0","PM2.5","PM10"]
     units = ["ppb","ppb","ppb","ppb","ug/m3","ug/m3","ug/m3"]
@@ -15,7 +19,7 @@ def data(today):
     x = pd.DataFrame()
 
     for i in range(7):
-        url =  "http://18.222.146.48/RAMP/v1/raw/1047/data/"+hist.strftime("%Y-%m-%d")+"-1047.txt"
+        url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
         if os.path.exists(str(hist)+"-1047.txt"): 
             dat = str(hist)+"-1047.txt"
         else:
@@ -32,14 +36,14 @@ def data(today):
         dat.set_index('Date')
 
         #dat = dat[(dat>0)]
-    
+
         week_dat = pd.concat([dat,week_dat], ignore_index=False)
         
         hist = hist + timedelta(days=1)
 
 
     for r in range(len(head)-1):
-        plt.figure(figsize=(20,10))
+        plt.figure(figsize=(10,5))
         plt.scatter(week_dat['Date'],week_dat[str(head[r+1])])
         plt.title(head[r+1])
         plt.ylabel("Concentration ("+str(units[r])+")")

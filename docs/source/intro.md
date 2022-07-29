@@ -1,6 +1,4 @@
 # About the RAMP AQ Sensor
 
-The RAMP AQ sensor. 
+The SENSIT RAMP Air Quality (AQ) sensor. 
 
-*[AQ]: Air Quality
-*[WFRT]: Weather Forecasting Research Team
