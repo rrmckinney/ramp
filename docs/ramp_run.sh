@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/miniconda3/bin
 source  /Users/rmckinney/opt/miniconda3/envs/wfrt
 
 make clean
