@@ -1,5 +1,9 @@
 #!/bin/bash
 
-for name in /Users/rmckinney/ramp/docs/sh_files/*.sh; do
-    sh $name
-done
+cd /Users/rmckinney/ramp
+make -f /docs/Makefile clean
+make -f /docs/Makefile html
+
+git add .
+git commit -m "update ramp data"
+git push
