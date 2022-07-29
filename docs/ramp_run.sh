@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/miniconda3/bin
 
 conda activate wfrt
 
