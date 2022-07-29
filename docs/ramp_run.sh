@@ -6,6 +6,7 @@ make -f Makefile clean
 
 make -f Makefile html 
 
+cd ..
 git add .
 
 git commit -m "add ramp data"
