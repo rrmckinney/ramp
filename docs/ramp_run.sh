@@ -1,13 +1,5 @@
-#!/bin/sh
-source /Users/rmckinney/
-conda activate /Users/rmckinney/opt/miniconda3/envs/wfrt
+#!/bin/bash
 
-make -f Makefile clean 
-
-make -f Makefile html 
-
-git add .
-
-git commit -m "add ramp data"
-
-git push    
+for name in /Users/rmckinney/ramp/docs/sh_files/*.sh; do
+    sh $name
+done
