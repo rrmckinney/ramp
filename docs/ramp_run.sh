@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd /Users/rmckinney/ramp
-make -f /docs/Makefile clean
-make -f /docs/Makefile html
+cd /Users/rmckinney/ramp/docs
+make -f Makefile clean
+make -f Makefile html
 
 git add .
 git commit -m "update ramp data"
