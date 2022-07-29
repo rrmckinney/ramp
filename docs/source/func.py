@@ -18,7 +18,7 @@ def run():
     week_dat = pd.DataFrame(columns = head)
     x = pd.DataFrame()
 
-    for i in range(7):
+    for i in range(8):
         url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
         if os.path.exists(str(hist)+"-1047.txt"): 
             dat = str(hist)+"-1047.txt"
