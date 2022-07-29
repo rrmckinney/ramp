@@ -1,12 +1,11 @@
 #!/bin/sh
-source /Users/rmckinney/miniconda3/bin/activate
+source /Users/rmckinney/
 conda activate /Users/rmckinney/opt/miniconda3/envs/wfrt
 
 make -f Makefile clean 
 
 make -f Makefile html 
 
-cd ..
 git add .
 
 git commit -m "add ramp data"
