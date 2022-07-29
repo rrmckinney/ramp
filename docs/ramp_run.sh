@@ -2,9 +2,9 @@
 source /Users/rmckinney/miniconda3/bin/activate
 conda activate /Users/rmckinney/opt/miniconda3/envs/wfrt
 
-make clean 
+make -f Makefile clean 
 
-make html 
+make -f Makefile html 
 
 git add .
 
