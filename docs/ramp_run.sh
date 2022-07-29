@@ -1,5 +1,6 @@
 #!/bin/sh
 source /Users/rmckinney/miniconda3/bin/activate
+source /Users/rmckinney/opt/miniconda3/envs/wfrt
 conda env list
 conda activate wfrt
 
