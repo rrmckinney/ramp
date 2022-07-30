@@ -12,7 +12,7 @@ Welcome to the WFRT Air Quality data display!
    :caption: Contents:
    
    intro.md
-   Data Graphs <data.nbconvert.ipynb>
+   Data Graphs <data.ipynb>
 
 
 Indices and tables
