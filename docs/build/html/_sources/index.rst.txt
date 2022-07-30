@@ -6,12 +6,13 @@
 Welcome to the WFRT Air Quality data display!
 ==============================================
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
    intro.md
-   Data Graphs <data.ipynb>
+   Data Graphs <data.nbconvert.ipynb>
 
 
 Indices and tables
