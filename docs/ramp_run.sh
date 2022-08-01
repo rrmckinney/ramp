@@ -7,6 +7,7 @@ jupyter nbconvert  --execute --clear-output /Users/rmckinney/ramp/docs/source/da
 make -f Makefile clean
 make -f Makefile html
 
+git remote set-url origin https://github.com/rrmckinney/ramp.git
 git add .
 git commit -m "update ramp data"
 git push
