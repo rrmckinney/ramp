@@ -22,7 +22,7 @@ def run():
         url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
         if os.path.exists(str(hist)+"-1047.txt"): 
             dat = str(hist)+"-1047.txt"
-        elif os.path.exists(str(hist[8]+"-1047.txt"):
+        elif os.path.exists(str(hist[8])+"-1047.txt"):
             os.remove(str(hist[8]))
             dat = wget.download(url)
         else:
