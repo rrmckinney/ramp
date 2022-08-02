@@ -1,5 +1,6 @@
 #!/bin/bash
 HOME = /home/rmckinney git push origin master
+export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519"
 source /Users/rmckinney/miniconda3/bin/activate
 conda activate /Users/rmckinney/opt/miniconda3/envs/wfrt
 
