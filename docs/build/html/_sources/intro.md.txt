@@ -15,7 +15,7 @@ Below the table[^first] provides the specifications for ecah of these constiuten
 
 ![RAMP specs](/pics/ramp_specs.png)
 
-Check out the data page for real-time AQ meausrements!
+Check out the data page for AQ meausrements!
 [^first]: [SENSIT website](gasleaksensors.com)
 
 
