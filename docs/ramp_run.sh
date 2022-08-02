@@ -1,4 +1,5 @@
 #!/bin/bash
+HOME = /home/rmckinney git push origin master
 source /Users/rmckinney/miniconda3/bin/activate
 conda activate /Users/rmckinney/opt/miniconda3/envs/wfrt
 
@@ -7,7 +8,7 @@ jupyter nbconvert  --execute --clear-output /Users/rmckinney/ramp/docs/source/da
 make -f Makefile clean
 make -f Makefile html
 
-. ~/.keychain/$HOSTNAME-sh
+
 git remote set-url origin https://github.com/rrmckinney/ramp.git
 git add .
 git commit -m "update ramp data"
