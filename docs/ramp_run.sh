@@ -12,4 +12,4 @@ make -f Makefile html
 git remote set-url origin https://github.com/rrmckinney/ramp.git
 git add .
 git commit -m "update ramp data"
-git push
+git push -u origin HEAD
