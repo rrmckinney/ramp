@@ -23,9 +23,9 @@ def run():
         if os.path.exists(str(hist)+"-1047.txt"): 
             dat = str(hist)+"-1047.txt"
         elif i == 7 or i == 8:
-		    os.remove(str(hist)+"1047.txt")
+            os.remove(str(hist)+"-1047.txt")
             dat = wget.download(url)
-	    else:
+        else:
             dat = wget.download(url)
         
         dat = pd.read_csv(dat)
