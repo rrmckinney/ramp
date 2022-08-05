@@ -21,12 +21,12 @@ def run():
     for i in range(8):
         url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
         if os.path.exists(str(hist)+"-1047.txt"): 
-            dat = str(hist)+"-1047.txt"
+            	dat = str(hist)+"-1047.txt"
         elif i == 7 or i == 8:
-	    os.remove(str(hist)+"1-47.txt)
-            dat = wget.download(url)
+		os.remove(str(hist)+"1-47.txt)
+            	dat = wget.download(url)
 	else:
-            dat = wget.download(url)
+            	dat = wget.download(url)
         dat = pd.read_csv(dat)
         dat.iloc[:,1] = pd.to_datetime(dat.iloc[:,1])
 
