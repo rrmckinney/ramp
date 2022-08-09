@@ -10,6 +10,6 @@ make -f Makefile clean
 make -f Makefile html
 
 
-git -C ~/ramp/docs add .
-git -C ~/ramp/docs commit -m "update ramp data"
-git -C ~/ramp/docs push -u origin master
+git add .
+git commit -m "update ramp data"
+git push -u origin master
