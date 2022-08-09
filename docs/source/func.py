@@ -26,7 +26,7 @@ def run():
             #os.remove(str(hist)+"-1047.txt")
             #dat = wget.download(url)
         else:
-            dat = wget.download(url)
+            dat = wget.download(url, out = /data/)
         
         dat = pd.read_csv(dat)
         dat.iloc[:,1] = pd.to_datetime(dat.iloc[:,1])
