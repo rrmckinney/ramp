@@ -26,7 +26,7 @@ def run():
             #os.remove(str(hist)+"-1047.txt")
             #dat = wget.download(url)
         else:
-	        dir = os.path.expanduser(dir)
+            dir = os.path.expanduser(data)
             dat = wget.download(url, out = dir)
         
         dat = pd.read_csv(dat)
