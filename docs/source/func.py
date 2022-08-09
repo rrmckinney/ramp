@@ -20,7 +20,7 @@ def run():
 
     for i in range(8):
         url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
-        if os.path.exists(str(hist)+"-1047.txt"): 
+        if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
             dat = str(hist)+"-1047.txt"
         #elif i == 6:
             #os.remove(str(hist)+"-1047.txt")
