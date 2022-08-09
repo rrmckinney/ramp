@@ -9,7 +9,4 @@ rm  -r /Users/rmckinney/ramp/docs/source/data/*
 make -f Makefile clean
 make -f Makefile html
 
-
-git add .
-git commit -m "update ramp data"
-git push origin main
+python index.py
