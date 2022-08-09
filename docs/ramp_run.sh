@@ -12,4 +12,4 @@ make -f Makefile html
 
 git add .
 git commit -m "update ramp data"
-git push -u origin master
+git push origin main
