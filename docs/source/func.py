@@ -12,13 +12,13 @@ def run():
     from datetime import date, timedelta
 
     today = date.today()
-    hist = today - timedelta(days=50)
+    hist = today - timedelta(days=70)
     head = ["Date","CO","NO","NO2", "O3","PM1.0","PM2.5","PM10"]
     units = ["ppb","ppb","ppb","ppb","ug/m3","ug/m3","ug/m3"]
     week_dat = pd.DataFrame(columns = head)
     x = pd.DataFrame()
 
-    for i in range(51):
+    for i in range(71):
         url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
         if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
             dat = "/data/"+str(hist)+"-1047.txt"
