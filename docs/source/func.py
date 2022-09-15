@@ -41,6 +41,8 @@ def run():
         except:
             print("Warning: An error occured for "+hist.strftime("%Y-%m-%d")+". Check to see if data exists.")
             pass
+        finally:
+            pass
 
     for r in range(len(head)-1):
         plt.figure(figsize=(15,5))
