@@ -23,8 +23,7 @@ def run():
             url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
             if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
                 dat = "/data/"+str(hist)+"-1047.txt"
-            elif i == 6:
-                
+         
             else:
                 dir = os.path.expanduser("./data")
                 dat = wget.download(url, out = dir)
