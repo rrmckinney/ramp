@@ -21,12 +21,8 @@ def run():
     for i in range(8):
         try:
             url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
-            if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
-                dat = "/data/"+str(hist)+"-1047.txt"
-         
-            else:
-                dir = os.path.expanduser("./data")
-                dat = wget.download(url, out = dir)
+            dir = os.path.expanduser("./data")
+            dat = wget.download(url, out = dir)
             
             dat = pd.read_csv(dat)
             dat.iloc[:,1] = pd.to_datetime(dat.iloc[:,1])
@@ -38,8 +34,6 @@ def run():
 
             dat.columns = head
             dat.set_index('Date')
-
-            #dat = dat[(dat>0)]
 
             week_dat = pd.concat([dat,week_dat], ignore_index=False)
             
