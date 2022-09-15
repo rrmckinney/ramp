@@ -22,10 +22,10 @@
    "id": "677c9c9b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-09-15T23:32:59.629388Z",
-     "iopub.status.busy": "2022-09-15T23:32:59.629106Z",
-     "iopub.status.idle": "2022-09-15T23:33:08.094055Z",
-     "shell.execute_reply": "2022-09-15T23:33:08.093219Z"
+     "iopub.execute_input": "2022-09-15T23:38:01.045481Z",
+     "iopub.status.busy": "2022-09-15T23:38:01.045195Z",
+     "iopub.status.idle": "2022-09-15T23:38:10.963898Z",
+     "shell.execute_reply": "2022-09-15T23:38:10.962967Z"
     }
    },
    "outputs": [
@@ -33,7 +33,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "2022-09-15\n",
+      "Today is 2022-09-15\n",
       "100% [..........................................................] 88427 / 88427Warning: An error occured for 2022-09-14. Check to see if data exists.\n",
       "Warning: An error occured for 2022-09-14. Check to see if data exists.\n"
      ]
@@ -128,6 +128,14 @@
     "\n",
     "run()"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1838f34b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
