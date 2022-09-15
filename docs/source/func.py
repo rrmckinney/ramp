@@ -12,7 +12,7 @@ def run():
     from datetime import date, timedelta
 
     today = date.today()
-    print("Today is "+today.strftime("%Y-%m-%d"))
+    print("Today is "+today.strftime("%Y-%m-%d")+".")
     hist = today - timedelta(days=7)
     head = ["Date","CO","NO","NO2", "O3","PM1.0","PM2.5","PM10"]
     units = ["ppb","ppb","ppb","ppb","ug/m3","ug/m3","ug/m3"]
@@ -41,6 +41,7 @@ def run():
             hist = hist + timedelta(days=1)
         except:
             print("Warning: An error occured for "+hist.strftime("%Y-%m-%d")+". Check to see if data exists.")
+            hist = hist + timedelta(days=1)
             continue
 
     for r in range(len(head)-1):
