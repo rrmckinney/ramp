@@ -19,32 +19,34 @@ def run():
     x = pd.DataFrame()
 
     for i in range(8):
-        url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
-        if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
-            dat = "/data/"+str(hist)+"-1047.txt"
-        #elif i == 6:
-            #os.remove(str(hist)+"-1047.txt")
-            #dat = wget.download(url)
-        else:
-            dir = os.path.expanduser("./data")
-            dat = wget.download(url, out = dir)
-        
-        dat = pd.read_csv(dat)
-        dat.iloc[:,1] = pd.to_datetime(dat.iloc[:,1])
+        try:
+            url =  link+hist.strftime("%Y-%m-%d")+"-"+station+".txt"
+            if os.path.exists("/data/"+str(hist)+"-1047.txt"): 
+                dat = "/data/"+str(hist)+"-1047.txt"
+            elif i == 6:
+                
+            else:
+                dir = os.path.expanduser("./data")
+                dat = wget.download(url, out = dir)
+            
+            dat = pd.read_csv(dat)
+            dat.iloc[:,1] = pd.to_datetime(dat.iloc[:,1])
 
-        dat = dat.select_dtypes(exclude=["object"])
-        dat = dat.iloc[:,0:12]
-        for e in range(4):
-            dat = dat.drop(columns=dat.columns[5])
+            dat = dat.select_dtypes(exclude=["object"])
+            dat = dat.iloc[:,0:12]
+            for e in range(4):
+                dat = dat.drop(columns=dat.columns[5])
 
-        dat.columns = head
-        dat.set_index('Date')
+            dat.columns = head
+            dat.set_index('Date')
 
-        #dat = dat[(dat>0)]
+            #dat = dat[(dat>0)]
 
-        week_dat = pd.concat([dat,week_dat], ignore_index=False)
-        
-        hist = hist + timedelta(days=1)
+            week_dat = pd.concat([dat,week_dat], ignore_index=False)
+            
+            hist = hist + timedelta(days=1)
+        except:
+            print("an error occured for"+hist.strftime("%Y-%m-%d"))
 
 
     for r in range(len(head)-1):
