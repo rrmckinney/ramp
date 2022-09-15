@@ -6,7 +6,7 @@ export GIT_SSH_COMMAND="ssh -i /Users/rmckinney/.ssh/id_rsa"
 
 #cd /Users/rmckinney/ramp/docs
 jupyter nbconvert  --execute --clear-output /Users/rmckinney/ramp/docs/source/data.ipynb
-rm  -r /Users/rmckinney/ramp/docs/source/data/*
+#rm  -r /Users/rmckinney/ramp/docs/source/data/*
 make -f Makefile clean
 make -f Makefile html
 
