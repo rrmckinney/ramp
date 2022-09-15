@@ -45,7 +45,7 @@ def run():
             
             hist = hist + timedelta(days=1)
         except:
-            print("an error occured for"+hist.strftime("%Y-%m-%d"))
+            print("an error occured for "+hist.strftime("%Y-%m-%d"))
 
 
     for r in range(len(head)-1):
