@@ -42,7 +42,6 @@ def run():
         except:
             print("\nWarning: An error occured for "+hist.strftime("%Y-%m-%d")+".")
             hist = hist + timedelta(days=1)
-            continue
 
     for r in range(len(head)-1):
         plt.figure(figsize=(15,5))
