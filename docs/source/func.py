@@ -40,7 +40,7 @@ def run():
             
             hist = hist + timedelta(days=1)
         except:
-            print("\nWarning: An error occured for "+hist.strftime("%Y-%m-%d")+". Check to see if data exists.")
+            print("\nWarning: An error occured for "+hist.strftime("%Y-%m-%d")+". Check to see ifdata exists for this day.")
             hist = hist + timedelta(days=1)
             continue
 
