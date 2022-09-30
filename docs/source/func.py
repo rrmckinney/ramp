@@ -49,7 +49,7 @@ def run():
 
     for r in range(len(head)-1):
         plt.figure(figsize=(15,5))
-        plt.scatter(week_dat['Date'],week_dat[str(head[r+1])], s=1)
+        plt.scatter(week_dat.index,week_dat[str(head[r+1])], s=1)
         plt.title(head[r+1])
         plt.ylabel("Concentration ("+str(units[r])+")")
         plt.xlabel("Date")
