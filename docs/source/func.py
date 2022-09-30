@@ -44,7 +44,7 @@ def run():
             hist = hist + timedelta(days=1)
     
     week_dat.index = pd.DatetimeIndex(week_dat.Date)
-    week_dat = week_dat.resample('1H').mean()
+    week_dat = week_dat.resample('1T').mean()
 
 
     for r in range(len(head)-1):
