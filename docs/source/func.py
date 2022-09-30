@@ -44,7 +44,7 @@ def run():
             hist = hist + timedelta(days=1)
     
     week_dat.index = pd.DatetimeIndex(week_dat.Date)
-    week_dat.resample('15T').mean()
+    week_dat.resample('1H').mean()
 
     for r in range(len(head)-1):
         plt.figure(figsize=(15,5))
