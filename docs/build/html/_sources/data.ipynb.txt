@@ -22,10 +22,10 @@
    "id": "677c9c9b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-15T07:00:04.065646Z",
-     "iopub.status.busy": "2022-11-15T07:00:04.065363Z",
-     "iopub.status.idle": "2022-11-15T07:00:07.697466Z",
-     "shell.execute_reply": "2022-11-15T07:00:07.696634Z"
+     "iopub.execute_input": "2022-11-15T08:00:18.335425Z",
+     "iopub.status.busy": "2022-11-15T08:00:18.335136Z",
+     "iopub.status.idle": "2022-11-15T08:00:23.908374Z",
+     "shell.execute_reply": "2022-11-15T08:00:23.907365Z"
     },
     "vscode": {
      "languageId": "python"
@@ -36,9 +36,7 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Today is 2022-11-14.\n",
-      "\n",
-      "Warning: An error occured for 2022-11-07.\n",
+      "Today is 2022-11-15.\n",
       "\n",
       "Warning: An error occured for 2022-11-08.\n",
       "\n",
@@ -52,7 +50,9 @@
       "\n",
       "Warning: An error occured for 2022-11-13.\n",
       "\n",
-      "Warning: An error occured for 2022-11-14.\n"
+      "Warning: An error occured for 2022-11-14.\n",
+      "\n",
+      "Warning: An error occured for 2022-11-15.\n"
      ]
     },
     {
