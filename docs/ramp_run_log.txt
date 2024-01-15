@@ -38,6 +38,3 @@ dumping object inventory... done
 build succeeded, 1 warning.
 
 The HTML pages are in build/html.
-[main 6362d81d0] update ramp data
- 20 files changed, 144 insertions(+), 44 deletions(-)
-branch 'main' set up to track 'origin/main'.
